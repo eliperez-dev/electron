@@ -1,27 +1,61 @@
-# Electron Emulator/Compiler
+# Electron Redstone CPU
 
-Welcome to the repository for the Electron Minecraft Redstone Computer! This repo contains the emulator, compiler, example programs, and a VS Code extension for syntax highlighting.
+This is a complete computer-architecture toolchain built from scratch in Rust. It is centered around **Electron**, a custom 8-bit, Turing-complete, RISC-V-inspired CPU.
 
-## Getting Started
+This repository contains all components of the toolchain:
 
-To compile and run the example programs, clone this repo and execute one of the following commands:
+* **The Assembler:** A compiler that translates custom Electron Assembly (`.elt`) into 8-bit machine code.
+* **The Emulator:** A Rust-based emulator with a `raylib-rs` GUI that runs the machine code, allowing for rapid development and debugging.
+* **The VS Code Extension:** Provides full syntax highlighting for the Electron Assembly language.
+* **The Minecraft Implementation:** The final CPU design was prototyped and built using Redstone components in Minecraft, proving the architecture in a sandboxed, logic-gate environment.
+
+## Minecraft Redstone Implementation
+
+As a proof-of-concept, the final Electron V1 CPU was designed and built from first principles using Redstone components within Minecraft. This demonstrates the design in a sandboxed, low-level logic-gate environment.
+
+![Screenshot of the Electron CPU built in Minecraft](PASTE_YOUR_MINECRAFT_SCREENSHOT_HERE.png)
+
+### CPU Specifications
+* **ROM:** 96 bytes (32 lines)
+* **Instruction size:** 3 bytes
+* **RAM:** 32 bytes
+* **ALUP:** 8 ticks
+* **Registers:** 7 bytes (+1 zero register)
+* **Cores:** 1
+* **Pipeline:** 4 stage waterfall
+* **Bus width:** 8 bit
+* **Display:** 16x16 screen
+* **I/O:** 8 Bytes out, 1 byte in
+* **Speed (Real time):** 1hz
+
+---
+
+## Running the Toolchain
+
+You can compile and run an assembly program in the Rust-based emulator with a single command. This will build the toolchain, assemble the `.elt` file, and launch the emulator GUI.
 
 ```sh
+# Assemble and run the fibonacci program in the emulator
 cargo run -- -f fibonacci.elt
+
+# Assemble and run the heart-drawing program
 cargo run -- -f heart.elt
 ```
 
-### Prerequisites
+## Emulator GUI
 
-To run the GUI, you may need to install C/C++ dependencies from [raylib-rs](https://github.com/deltaphc/raylib-rs).
+The emulator provides a visual interface to inspect the CPU's state, including registers, RAM, and the 16x16 display output.
 
-### Running Without Compiling
+## Prerequisites
 
-You can also run the program without compiling. For instructions, refer to the [Emulator](#emulator) section.
+The emulator GUI is built with raylib-rs. To run it, you may need to install C/C++ dependencies from raylib-rs.
 
-## Programming & VS Code Extension
+## The Electron ISA & Tooling
 
-The custom programming language currently supports the following instructions and their variants:
+The custom 8-bit Instruction Set Architecture (ISA) is **Turing-complete** and **inspired by RISC-V** principles.
+
+### Supported Instructions
+It currently supports the following instructions and their variants:
 
 - `IMM`
 - `MOV`
@@ -34,35 +68,14 @@ The custom programming language currently supports the following instructions an
 - `BIE`
 - `NOT`
 
-### Syntax Highlighting Example:
-
-Install the extension in VS Code using the VSIX file located at `electron-lang/electron-language-0.0.1.vsix`.
+### VS Code Extension
+To make programming easier, a custom VS Code extension provides full syntax highlighting for `.elt` files. You can install it from the VSIX file located at `electron-lang/electron-language-0.0.1.vsix`.
 
 ![Syntax Highlighting Example](https://github.com/user-attachments/assets/a1841e33-3296-4aee-bc1d-d63cdf80b4d8)
-
-## Emulator
-
-To run the emulator, create a `.elt` file and write your program in it. Then, execute `electron.exe` with the argument `-f your_program.elt`. You may also use one of the example programs.
 
 ## Computer Specs
 
 The version of the computer built in minecraft using redstone components has these specifications:
-
-Electron Redstone Computer V1:
-
-ROM: 96 bytes (32 lines)   
-Instruction size: 3 bytes  
-RAM: 32 bytes  
-ALUP: 8 ticks  
-Registers: 7 bytes ( +1 zero register )  
-Cores: 1  
-Pipeline 	4 stage waterfall  
-Bus width	8 bit  
-Display: 	16x16 screen   
-I/O: 8 Bytes out, 1 byte in  
-Speed (Real time): 1hz  
-
-
 
 ## Additional Resources
 
