@@ -11,7 +11,7 @@ This repository contains all components of the toolchain:
 
 ## Minecraft Redstone Implementation
 
-As a proof-of-concept, the final Electron V1 CPU was designed and built from first principles using Redstone components within Minecraft. This demonstrates the design in a sandboxed, low-level logic-gate environment.
+As a proof-of-concept, the final Electron V1 CPU was designed and built from first principles using Redstone components within Minecraft. The entire computer and its varients exist on a PS4 minecraft world, hand made on controller with every block hand placed, and with no help from external programs or mods.
 
 ![Screenshot of the Electron CPU built in Minecraft](minecraft-ss/image0.jpeg)
 
