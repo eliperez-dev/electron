@@ -110,11 +110,11 @@ For more detailed information, refer to the [spreadsheet](https://docs.google.co
 
 ---
 
-## Gallery
+# Gallery
 
-Below is a complete gallery of the Minecraft Redstone CPU implementation:
+Below is a complete gallery of the Minecraft Redstone CPU implementations:
 
-### Electron:
+## Electron:
 ![Image 4](minecraft-ss/image4.jpeg)
 
 ![Image 5](minecraft-ss/image5.jpeg)
@@ -124,7 +124,7 @@ Below is a complete gallery of the Minecraft Redstone CPU implementation:
 ![Image 3](minecraft-ss/image3.png)
 
 
-### Experimental Designs:
+## Experimental Designs:
 
 ![Image 0](minecraft-ss/image0.jpeg)
 
