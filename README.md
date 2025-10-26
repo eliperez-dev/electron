@@ -13,7 +13,9 @@ This repository contains all components of the toolchain:
 
 As a proof-of-concept, the final Electron V1 CPU was designed and built from first principles using Redstone components within Minecraft. This demonstrates the design in a sandboxed, low-level logic-gate environment.
 
-![Screenshot of the Electron CPU built in Minecraft](minecraft.png)
+![Screenshot of the Electron CPU built in Minecraft](minecraft-ss/image0.jpeg)
+
+*See the [Gallery](#gallery) section below for more images of the Minecraft implementation.*
 
 ### CPU Specifications
 * **ROM:** 96 bytes (32 lines)
@@ -103,3 +105,22 @@ To make programming easier, a custom VS Code extension provides full syntax high
 ## Additional Resources
 
 For more detailed information, refer to the [spreadsheet](https://docs.google.com/spreadsheets/d/1BrFaLE5tVunBa1GLoMH4RvVh4GXqqtaN3Qv29scvfyQ/edit?usp=sharing). Note that this document may not be fully up-to-date with the current progress of the repo.
+
+---
+
+## Gallery
+
+Below is a complete gallery of the Minecraft Redstone CPU implementation:
+
+![Image 4](minecraft-ss/image4.jpeg)
+
+![Image 5](minecraft-ss/image5.jpeg)
+
+![Image 0](minecraft-ss/image0.jpeg)
+
+![Image 1](minecraft-ss/image1.jpeg)
+
+![Image 2](minecraft-ss/image2.png)
+
+![Image 3](minecraft-ss/image3.png)
+
