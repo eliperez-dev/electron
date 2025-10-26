@@ -1,0 +1,14 @@
+IMM R1 B10101010  
+IMM R2 B01010101  
+
+NOT R1 R1
+NOT R2 R2
+OUT %0 R1       
+OUT %1 R2        
+OUT %2 R1         
+OUT %3 R2        
+OUT %4 R1       
+OUT %5 R2       
+OUT %6 R1         
+OUT %7 R2        
+JMP 3

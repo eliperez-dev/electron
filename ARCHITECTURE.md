@@ -368,7 +368,7 @@ Range:   0–255 (8-bit unsigned)
 Example: 42, 255, 0
 
 Binary Format:
-  B11001010      - Binary literal (8 bits)
+  B11001010      - Binary literal (8 bits) - PREFIX MUST BE 'B', NOT '0b'
   B1100_1010     - Binary with underscores for readability
 ```
 
@@ -548,7 +548,7 @@ NOOP
 ### Assembler Features
 
 - **Case-insensitive:** `IMM`, `imm`, `Imm` all valid
-- **Binary literals:** `B11001010` or `B1100_1010`
+- **Binary literals:** `B11001010` or `B1100_1010` (uppercase `B` prefix only, not `0b`)
 - **Inline comments:** Text after `;` ignored
 - **Blank lines:** Skipped during parsing
 - **Automatic padding:** Programs < 32 instructions padded with NOOP

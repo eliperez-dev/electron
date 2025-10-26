@@ -24,7 +24,7 @@ As a proof-of-concept, the final Electron V1 CPU was designed and built from fir
 * **Cores:** 1
 * **Pipeline:** 4 stage waterfall
 * **Bus width:** 8 bit
-* **Display:** 16x16 screen
+* **Display:** 8x8 screen
 * **I/O:** 8 Bytes out, 1 byte in
 * **Speed (Real time):** 1hz
 
@@ -40,11 +40,14 @@ cargo run -- -f fibonacci.elt
 
 # Assemble and run the heart-drawing program
 cargo run -- -f heart.elt
+
+# Or you can run without compiling (Easiest):
+./electron -f heart.elt
 ```
 
 ## Emulator GUI
 
-The emulator provides a visual interface to inspect the CPU's state, including registers, RAM, and the 16x16 display output.
+The emulator provides a visual interface to inspect the CPU's state, including registers, RAM, and the 8x8 display output.
 
 ![Screenshot of the Electron CPU built in Minecraft](gui.png)
 
@@ -72,14 +75,30 @@ It currently supports the following instructions and their variants:
 - `BIE`
 - `NOT`
 
+### Binary Literal Format
+
+When writing binary literals in assembly, use the **uppercase `B` prefix**:
+```assembly
+IMM R1 B11110000   ; Correct: uppercase B
+IMM R2 0b11110000  ; Incorrect: do not use 0b prefix
+```
+
 ### VS Code Extension
-To make programming easier, a custom VS Code extension provides full syntax highlighting for `.elt` files. You can install it from the VSIX file located at `electron-lang/electron-language-0.0.1.vsix`.
+
+To make programming easier, a custom VS Code extension provides full syntax highlighting for `.elt` files.
+
+**Quick Installation:**
+
+1. Open VS Code
+2. Press `Ctrl+Shift+X` (or `Cmd+Shift+X` on macOS) to open Extensions
+3. Click the `...` menu → Select **"Install from VSIX..."**
+4. Navigate to `electron-lang/electron-language-0.0.1.vsix` and open it
+5. Reload VS Code when prompted
+
+**For detailed installation instructions** (including alternative methods and troubleshooting), see [`electron-lang/README.md`](electron-lang/README.md).
 
 ![Syntax Highlighting Example](https://github.com/user-attachments/assets/a1841e33-3296-4aee-bc1d-d63cdf80b4d8)
 
-## Computer Specs
-
-The version of the computer built in minecraft using redstone components has these specifications:
 
 ## Additional Resources
 
