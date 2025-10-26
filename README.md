@@ -13,7 +13,7 @@ This repository contains all components of the toolchain:
 
 As a proof-of-concept, the final Electron V1 CPU was designed and built from first principles using Redstone components within Minecraft. This demonstrates the design in a sandboxed, low-level logic-gate environment.
 
-![Screenshot of the Electron CPU built in Minecraft](PASTE_YOUR_MINECRAFT_SCREENSHOT_HERE.png)
+![Screenshot of the Electron CPU built in Minecraft](minecraft.png)
 
 ### CPU Specifications
 * **ROM:** 96 bytes (32 lines)
@@ -45,6 +45,8 @@ cargo run -- -f heart.elt
 ## Emulator GUI
 
 The emulator provides a visual interface to inspect the CPU's state, including registers, RAM, and the 16x16 display output.
+
+![Screenshot of the Electron CPU built in Minecraft](gui.png)
 
 ## Prerequisites
 
