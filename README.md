@@ -79,8 +79,8 @@ It currently supports the following instructions and their variants:
 
 When writing binary literals in assembly, use the **uppercase `B` prefix**:
 ```assembly
-IMM R1 B11110000   ; Correct: uppercase B
-IMM R2 0b11110000  ; Incorrect: do not use 0b prefix
+IMM R1 B11110000
+
 ```
 
 ### VS Code Extension
