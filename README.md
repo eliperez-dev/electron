@@ -56,6 +56,8 @@ The emulator GUI is built with raylib-rs. To run it, you may need to install C/C
 
 The custom 8-bit Instruction Set Architecture (ISA) is **Turing-complete** and **inspired by RISC-V** principles.
 
+For a comprehensive technical deep-dive into the CPU architecture, instruction set, pipeline model, and programming guidelines, see the [**ARCHITECTURE.md**](ARCHITECTURE.md) documentation.
+
 ### Supported Instructions
 It currently supports the following instructions and their variants:
 
