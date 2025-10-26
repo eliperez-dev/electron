@@ -53,9 +53,6 @@ The emulator provides a visual interface to inspect the CPU's state, including r
 
 ![Screenshot of the Electron CPU built in Minecraft](gui-example.png)
 
-## Prerequisites
-
-The emulator GUI is built with raylib-rs. To run it, you may need to install C/C++ dependencies from raylib-rs.
 
 ## The Electron ISA & Tooling
 
@@ -88,6 +85,11 @@ IMM R1 B11110000
 ### VS Code Extension
 
 To make programming easier, a custom VS Code extension provides full syntax highlighting for `.elt` files.
+
+## Prerequisites
+
+The emulator GUI is built with raylib-rs. To run it, you may need to install C/C++ dependencies from raylib-rs.
+
 
 **Quick Installation:**
 
