@@ -49,7 +49,7 @@ cargo run -- -f heart.elt
 
 The emulator provides a visual interface to inspect the CPU's state, including registers, RAM, and the 8x8 display output.
 
-![Screenshot of the Electron CPU built in Minecraft](gui.png)
+![Screenshot of the Electron CPU built in Minecraft](gui-example.png)
 
 ## Prerequisites
 
