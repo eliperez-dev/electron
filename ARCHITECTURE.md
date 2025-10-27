@@ -703,15 +703,14 @@ LOOP:
 ```assembly
 IMM R1 0        ; Fib(0)
 IMM R2 1        ; Fib(1)
-LOOP:
-  MOV R3 R1
-  MOV R4 R2
-  ADD R1 R2     ; R1 + R2 → Accumulator
-  UADD R5 R0    ; Copy accumulator to R5
-  OUT %0 R5     ; Display result
-  MOV R1 R2
-  MOV R2 R5     ; Next iteration
-  JMP LOOP
+MOV R3 R1
+MOV R4 R2
+ADD R1 R2     ; R1 + R2 → Accumulator
+UADD R5 R0    ; Copy accumulator to R5
+OUT %0 R5     ; Display result to port 0
+MOV R1 R2
+MOV R2 R5     ; Next iteration
+JMP 2
 ```
 
 **Behavior:** Generates Fibonacci sequence (0, 1, 1, 2, 3, 5, 8, ...) on port 0.
@@ -721,8 +720,8 @@ LOOP:
 ```assembly
 IMM R1 108      ; 0x6C = 01101100
 IMM R2 254      ; 0xFE = 11111110
-IMM R3 254
-IMM R4 254
+IMM R3 254      ; 0xFE = 11111110
+IMM R4 254      ; 0xFE = 11111110
 IMM R5 124      ; 0x7C = 01111100
 IMM R6 56       ; 0x38 = 00111000
 IMM R7 16       ; 0x10 = 00010000
