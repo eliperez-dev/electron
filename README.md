@@ -2,7 +2,9 @@
 
 **⚠️ QUICK ACCESS: The easiest way to run the Electron V2 Emulator is via the interactive Svelte component on my portfolio: [https://eliperez.dev](https://eliperez.dev).**
 
-**The rest of this README describes the legacy Rust CLI and Raylib application. While you technically *can* run the V2 emulator using these legacy tools, it is highly recommended to use the web-based emulator on the portfolio site instead.**
+The rest of this README describes the legacy Rust CLI and Raylib application. While you technically *can* run the V2 emulator using these legacy tools, it is highly recommended to use the web-based emulator on the portfolio site instead.
+
+# Legacy Electron Redstone CPU Toolchain
 
 This is a complete computer-architecture toolchain built from scratch in Rust. It supports two distinct custom CPU architectures:
 
